@@ -17,7 +17,7 @@ return new class extends Migration
             $table->float('price');
             $table->string('slug',255);
             $table->integer('stock');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->unsignedInteger('code_city')->nullable();
             $table->unsignedInteger('code_brand')->nullable();

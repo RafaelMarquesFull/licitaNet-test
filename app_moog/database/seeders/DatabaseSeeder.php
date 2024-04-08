@@ -21,7 +21,6 @@ class DatabaseSeeder extends Seeder
             BrandsSeeder::class,
             CategoriesSeeder::class,
             UsersSeeder::class,
-            // ProductsSeeder::class
         ]);
 
         

@@ -15,7 +15,6 @@ API REST: Embora a comunicação entre frontend e backend possa ser feita direta
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
@@ -32,47 +31,62 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 Clonando Projeto:
 
 ```
-https://github.com/suas/tags/do/projeto
+https://github.com/RafaelMarquesFull/licitaNet-test.git
 ```
 
 Instalando projeto
 
 ```
+compose install 
+```
+```
 npm install
 ```
+```
+php artisan migrate
+```
+```
+php artisan db:seed
+```
+  certifique-se de possuir uma versão do node js 18+ 
 
 Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Informaçoes uteis
-
+- Iniciando o projeto:
+```
+npm run dev
+```
+```
+php artisan serve
+```
 - Você pode encontrar uma colection do postman com todas as rotas API Restna pasta WORKSPACE.
 - Você também encotrará um modelo entidade relacional do banco de dados EER na pasta WORKSPACE.
+ 
 
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
 
 ```
 app_moog/workspace
 ```
-
-
-
-
+## ✒️ Login e senhas
+```
+admin@exemple.com.br
+```
+```
+admin123
+```
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Laravel 11](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Inertia React](https://maven.apache.org/) - Template
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+* [Laravel 11](https://laravel.com/docs/11.x/) - O framework web usado
+* [Inertia React]() - Template
+* [Tailwind-CSS]() - estilizaçao
+* [MySql]() - banco de dados
 
 ## 📌 Versão
 
-Utilizo [GitHub](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Utilizo [GitHub]() para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/RafaelMarquesFull/licitaNet-test). 
 
 ## ✒️ Autores
 Todos os envolvidos neste projeto:

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->increments('code_brand')->primary();
             $table->string('name');
             $table->string('manufacturer');
-            $table->string('sticker');
+            $table->string('sticker')->nullable();
             $table->timestamps();
         });
     }

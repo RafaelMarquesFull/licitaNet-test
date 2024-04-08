@@ -15,7 +15,7 @@ return new class extends Migration
             $table->increments('code_category')->primary();
             $table->string('name');
             $table->text('description');
-            $table->string('sticker');
+            $table->string('sticker')->nullable();
             $table->timestamps();
         });
     }
