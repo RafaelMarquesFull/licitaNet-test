@@ -118,7 +118,6 @@ class ProductsController extends Controller
     public function update(Request $request)
     {
 
-       
         $validatedData = ProductUpdateRequest::capture();
         
         dd( $request->all());

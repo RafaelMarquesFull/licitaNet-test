@@ -24,9 +24,10 @@ readonly class UpdateProductsDTO
     public static function makeFromRequest (ProductUpdateRequest $request)
     {
         
-        dd($request);
-      
+        
         $images = $request->request->get('images');
+
+        dd( $request->all());
         return new self (
             $request->code_product,
             $request->name,

@@ -10,7 +10,7 @@ export default function EditProducts({auth, products, locations, brands, categor
     const {id} = auth.user
     console.log(products)
     const { data, setData } = useForm({
-        code_product: products.code_product,
+        code_product: parseInt(products.code_product),
         name: products.name,
         price: products.price,
         description:products.description,
@@ -26,7 +26,9 @@ export default function EditProducts({auth, products, locations, brands, categor
         try {
             console.log(data)
             e.preventDefault()
-            router.put('/products/update',data)
+            router.put('/products/update',data, {
+                forceFormData: true,
+            })
             
         } catch (error) {
             console.log(error)
