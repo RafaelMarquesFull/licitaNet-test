@@ -37,7 +37,7 @@ https://github.com/RafaelMarquesFull/licitaNet-test.git
 Instalando projeto
 
 ```
-compose install 
+composer install
 ```
 ```
 npm install
